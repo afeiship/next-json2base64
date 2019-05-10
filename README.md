@@ -7,15 +7,20 @@ npm install -S afeiship/next-json2base64 --registry=https://registry.npm.taobao.
 ```
 
 ## apis
-| api | params | description   |
-|-----|--------|---------------|
-| get | -      | desc balabala |
+| api       | params   | description                          |
+| --------- | -------- | ------------------------------------ |
+| parse     | (string) | Transform base64 string to js object |
+| stringify | (object) | Transform object to base64 string    |
 
 ## usage
 ```js
 import NxJson2base64 from 'next-json2base64';
 
 // code goes here:
+NxJson2base64.parse('eyJuYW1lIjoiYWZlaSIsImFnZSI6MTA4fQ==');
+
+// { name: 'afei', age: 108 }
+
 ```
 
 ## resources
