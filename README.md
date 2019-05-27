@@ -22,6 +22,3 @@ NxJson2base64.parse('eyJuYW1lIjoiYWZlaSIsImFnZSI6MTA4fQ==');
 // { name: 'afei', age: 108 }
 
 ```
-
-## resources
-- https://github.com/afeiship
