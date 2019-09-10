@@ -1,7 +1,7 @@
 (function() {
   var global = global || this || window || Function('return this')();
   var nx = global.nx || require('next-js-core2');
-  var base64 = global.base64 || require('base-64');
+  var base64 = global.Base64 || require('js-base64').Base64;
 
   var NxJson2base64 = nx.declare('nx.Json2base64', {
     statics: {
