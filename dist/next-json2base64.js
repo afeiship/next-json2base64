@@ -1,7 +1,7 @@
 /*!
  * name: next-json2base64
  * url: https://github.com/afeiship/next-json2base64
- * version: 1.0.0
+ * version: 1.0.1
  * license: MIT
  */
 
