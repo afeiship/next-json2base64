@@ -31,6 +31,7 @@
   },
   "dependencies": {
     "js-base64": "^2.5.1",
-    "next-js-core2": "github:afeiship/next-js-core2"
+    "next-js-core2": "github:afeiship/next-js-core2",
+    "rake-git": "github:afeiship/rake-git"
   }
 }
