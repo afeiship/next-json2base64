@@ -1,9 +1,9 @@
 # next-json2base64
-> Json and base64 parse/stringify
+> Json and base64 parse/stringify.
 
-## install
+## installation
 ```bash
-npm install -S afeiship/next-json2base64 --registry=https://registry.npm.taobao.org
+npm install -S @feizheng/next-json2base64
 ```
 
 ## apis
@@ -14,11 +14,9 @@ npm install -S afeiship/next-json2base64 --registry=https://registry.npm.taobao.
 
 ## usage
 ```js
-import NxJson2base64 from 'next-json2base64';
+import NxJson2base64 from '@feizheng/next-json2base64';
 
 // code goes here:
-NxJson2base64.parse('eyJuYW1lIjoiYWZlaSIsImFnZSI6MTA4fQ==');
-
+NxJson2base64.decode('eyJuYW1lIjoiYWZlaSIsImFnZSI6MTA4fQ==');
 // { name: 'afei', age: 108 }
-
 ```
