@@ -7,10 +7,10 @@ npm install -S @feizheng/next-json2base64
 ```
 
 ## apis
-| api       | params   | description                          |
-| --------- | -------- | ------------------------------------ |
-| parse     | (string) | Transform base64 string to js object |
-| stringify | (object) | Transform object to base64 string    |
+| api    | params   | description                          |
+| ------ | -------- | ------------------------------------ |
+| decode | (string) | Transform base64 string to js object |
+| encode | (object) | Transform object to base64 string    |
 
 ## usage
 ```js
