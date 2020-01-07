@@ -1,5 +1,5 @@
 # next-json2base64
-> Json and base64 parse/stringify.
+> Json and base64 encode/decode.
 
 ## installation
 ```bash

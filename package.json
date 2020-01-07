@@ -1,7 +1,7 @@
 {
   "name": "@feizheng/next-json2base64",
   "version": "1.0.0",
-  "description": "Json and base64 parse/stringify.",
+  "description": "Json and base64 encode/decode.",
   "homepage": "https://github.com/afeiship/next-json2base64",
   "author": {
     "name": "afei",
