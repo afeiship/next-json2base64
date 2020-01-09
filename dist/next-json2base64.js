@@ -1,9 +1,9 @@
 /*!
  * name: @feizheng/next-json2base64
- * description: Json and base64 parse/stringify.
+ * description: Json and base64 encode/decode.
  * url: https://github.com/afeiship/next-json2base64
- * version: 1.0.0
- * date: 2020-01-07 10:52:01
+ * version: 1.1.0
+ * date: 2020-01-09 18:14:36
  * license: MIT
  */
 
@@ -14,6 +14,14 @@
 
   var NxJson2base64 = nx.declare('nx.Json2base64', {
     statics: {
+      parse: function(inString) {
+        console.warn('[deprecated]: use decode api instead.');
+        return this.decode(inString);
+      },
+      stringify: function(inObject) {
+        console.warn('[deprecated]: use encode api instead.');
+        return this.encode(inObject);
+      },
       decode: function(inString) {
         var jsonStr = base64.decode(inString);
         return JSON.parse(jsonStr);

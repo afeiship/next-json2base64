@@ -5,6 +5,14 @@
 
   var NxJson2base64 = nx.declare('nx.Json2base64', {
     statics: {
+      parse: function(inString) {
+        console.warn('[deprecated]: use decode api instead.');
+        return this.decode(inString);
+      },
+      stringify: function(inObject) {
+        console.warn('[deprecated]: use encode api instead.');
+        return this.encode(inObject);
+      },
       decode: function(inString) {
         var jsonStr = base64.decode(inString);
         return JSON.parse(jsonStr);
