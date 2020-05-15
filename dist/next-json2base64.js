@@ -1,9 +1,9 @@
 /*!
  * name: @feizheng/next-json2base64
  * description: Json and base64 encode/decode.
- * url: https://github.com/afeiship/next-json2base64
- * version: 1.1.0
- * date: 2020-01-09 18:16:35
+ * homepage: https://github.com/afeiship/next-json2base64
+ * version: 1.1.2
+ * date: 2020-05-15T03:52:15.931Z
  * license: MIT
  */
 
