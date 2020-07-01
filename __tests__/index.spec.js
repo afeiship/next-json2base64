@@ -1,4 +1,4 @@
-(function () {
+(function() {
   var nx = require('@feizheng/next-js-core2');
   var NxJson2base64 = require('../src/next-json2base64');
 
