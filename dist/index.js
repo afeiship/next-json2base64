@@ -3,7 +3,7 @@
  * description: Json and base64 encode/decode.
  * homepage: https://github.com/afeiship/next-json2base64
  * version: 1.0.0
- * date: 2020-11-20 22:55:42
+ * date: 2020-11-20 22:57:35
  * license: MIT
  */
 

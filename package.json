@@ -37,5 +37,13 @@
   },
   "dependencies": {
     "js-base64": "^3.6.0"
-  }
+  },
+  "keywords": [
+    "next",
+    "json",
+    "base64",
+    "b64",
+    "parse",
+    "stringify"
+  ]
 }
