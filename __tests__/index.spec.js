@@ -1,6 +1,5 @@
-(function() {
-  var nx = require('@feizheng/next-js-core2');
-  var NxJson2base64 = require('../src/next-json2base64');
+(function () {
+  const NxJson2base64 = require('../src');
 
   describe('NxJson2base64.methods', function () {
     test('test stringify:', function () {
@@ -38,11 +37,14 @@
         }
       };
 
-      expect(NxJson2base64.encode(data)).toBe('eyJ1cmwiOiJodHRwOi8vbG9jYWxob3N0OjMwMDAvc2lnbmluIiwicGFyYW1zIjp7ImlkIjoxMjMsImxhbmciOiJ6aF9DTiJ9fQ==');
+      expect(NxJson2base64.encode(data)).toBe(
+        'eyJ1cmwiOiJodHRwOi8vbG9jYWxob3N0OjMwMDAvc2lnbmluIiwicGFyYW1zIjp7ImlkIjoxMjMsImxhbmciOiJ6aF9DTiJ9fQ=='
+      );
     });
 
     test('url decode case:', () => {
-      var str = 'eyJ1cmwiOiJodHRwOi8vbG9jYWxob3N0OjMwMDAvc2lnbmluIiwicGFyYW1zIjp7ImlkIjoxMjMsImxhbmciOiJ6aF9DTiJ9fQ=='
+      var str =
+        'eyJ1cmwiOiJodHRwOi8vbG9jYWxob3N0OjMwMDAvc2lnbmluIiwicGFyYW1zIjp7ImlkIjoxMjMsImxhbmciOiJ6aF9DTiJ9fQ==';
       expect(NxJson2base64.decode(str)).toEqual({
         url: 'http://localhost:3000/signin',
         params: {
@@ -51,7 +53,5 @@
         }
       });
     });
-
   });
-
 })();
