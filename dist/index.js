@@ -2,13 +2,13 @@
  * name: @jswork/next-json2base64
  * description: Json and base64 encode/decode.
  * homepage: https://github.com/afeiship/next-json2base64
- * version: 1.0.0
- * date: 2020-11-20 22:57:35
+ * version: 1.0.1
+ * date: 2021-01-26 15:12:57
  * license: MIT
  */
 
 (function () {
-  var global = global || this || window || Function('return this')();
+  var global = typeof window !== 'undefined' ? window : this || Function('return this')();
   var nx = global.nx || require('@jswork/next');
   var base64 = global.Base64 || require('js-base64').Base64;
 
