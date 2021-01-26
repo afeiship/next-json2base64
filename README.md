@@ -25,6 +25,22 @@ import NxJson2base64 from '@jswork/next-json2base64';
 NxJson2base64.decode('eyJuYW1lIjoiYWZlaSIsImFnZSI6MTA4fQ==');
 // { name: 'afei', age: 108 }
 ```
+## url query
+- https://url?token=xxx&data=DATA_ENCODE_JSON
+
+> DATA_ENCODE_JSON 传放参数会用 base64加码
+```js
+data = base64.decode(
+  JSON.stringify({ q1: xx, q2: yy, q3: zz }
+)
+```
+
+> 接收到的 data，用base64解码
+```js
+JSON.parse(base64.decode(data));
+```
+
+> 注意 `window.atob/btoa` 对中文处理有可能有兼容问题，所以这里建议使用 `js-base64` 这个库
 
 ## license
 Code released under [the MIT license](https://github.com/afeiship/next-json2base64/blob/master/LICENSE.txt).
