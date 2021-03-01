@@ -26,11 +26,9 @@ NxJson2base64.decode('eyJuYW1lIjoiYWZlaSIsImFnZSI6MTA4fQ==');
 // { name: 'afei', age: 108 }
 ```
 ## url query
-> 特别注意: 在 url 中使用的时候，一定要提前 encodeURIComponent(DATA_ENCODE_JSON)
-
-> BUG(浏览器默认行为): O+8iSIsI==  -> O%208iSIsI%3D%3D
-
-> 实际我们的数据为: O+8iSIsI==  -> O%2B8iSIsI%3D%3D
+1. 特别注意: 在 url 中使用的时候，一定要提前 encodeURIComponent(DATA_ENCODE_JSON)
+2. BUG(浏览器默认行为): O+8iSIsI==  -> O%208iSIsI%3D%3D
+3. 实际我们的数据为: O+8iSIsI==  -> O%2B8iSIsI%3D%3D
 - https://url?token=xxx&data=DATA_ENCODE_JSON
 
 > DATA_ENCODE_JSON 传放参数会用 base64加码
