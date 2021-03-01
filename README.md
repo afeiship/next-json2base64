@@ -43,7 +43,7 @@ data = encodeURIComponent(
 > 接收到的 data，用base64解码
 ```js
 JSON.parse(
-  decodeURIComponent(base64.decode(data))
+  base64.decode(decodeURIComponent(data))
 );
 ```
 
