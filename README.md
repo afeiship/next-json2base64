@@ -12,10 +12,12 @@ npm install -S @jswork/next-json2base64
 ```
 
 ## apis
-| api    | params   | description                          |
-| ------ | -------- | ------------------------------------ |
-| decode | (string) | Transform base64 string to js object |
-| encode | (object) | Transform object to base64 string    |
+| api       | params   | description                                               |
+| --------- | -------- | --------------------------------------------------------- |
+| decode    | (string) | Transform base64 string to js object.                     |
+| decodeURI | (string) | Transform base64 string to js object when is in url case. |
+| encode    | (object) | Transform object to base64 string.                        |
+| encodeURI | (object) | Transform object to base64 string when is in url case.    |
 
 ## usage
 ```js
@@ -42,6 +44,7 @@ data = encodeURIComponent(
 
 > 接收到的 data，用base64解码
 ```js
+// !!! 这里特别提醒：如果在一些库中，取 queryString 的时候，有可能已经自带了 `decodeURIComponent`，所以这一步并不是必须的
 JSON.parse(
   base64.decode(decodeURIComponent(data))
 );
