@@ -1,7 +1,7 @@
 (function () {
   const NxJson2base64 = require('../src');
 
-  describe('NxJson2base64.methods', function () {
+  describe('NxJson2base64 basic api test', function () {
     test('test stringify:', function () {
       var obj = {
         name: 'afei',
@@ -52,6 +52,10 @@
           lang: 'zh_CN'
         }
       });
+    });
+
+    test('base64 should at NxJson2base64', () => {
+      expect(NxJson2base64.base64).toBeDefined();
     });
   });
 })();

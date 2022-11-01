@@ -5,6 +5,7 @@
 
   var NxJson2base64 = nx.declare('nx.Json2base64', {
     statics: {
+      base64: base64,
       encode: function (inObject) {
         var str = JSON.stringify(inObject);
         return base64.encode(str);
