@@ -55,7 +55,10 @@
     });
 
     test('base64 should at NxJson2base64', () => {
-      expect(NxJson2base64.base64).toBeDefined();
+      const b64 = NxJson2base64.base64;
+      expect(b64).toBeDefined();
+      expect(b64.encode('afei')).toBe('YWZlaQ==');
+      expect(b64.decode('YWZlaQ==')).toBe('afei');
     });
   });
 })();
