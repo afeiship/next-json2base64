@@ -13,7 +13,8 @@ npm install -S @jswork/next-json2base64
 
 ## apis
 | api       | params   | description                                               |
-| --------- | -------- | --------------------------------------------------------- |
+|-----------|----------|-----------------------------------------------------------|
+| base64    | -        | js-base64 reference.                                      |
 | decode    | (string) | Transform base64 string to js object.                     |
 | decodeURI | (string) | Transform base64 string to js object when is in url case. |
 | encode    | (object) | Transform object to base64 string.                        |
