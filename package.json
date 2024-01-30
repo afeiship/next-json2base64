@@ -1,6 +1,6 @@
 {
   "name": "@jswork/next-json2base64",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Json and base64 encode/decode.",
   "homepage": "https://js.work",
   "author": {
@@ -37,11 +37,22 @@
     "js-base64": "^3.7.2"
   },
   "babel": {
-    "presets": [["@babel/preset-env"]]
+    "presets": [
+      [
+        "@babel/preset-env"
+      ]
+    ]
   },
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org"
   },
-  "keywords": ["next", "json", "base64", "b64", "parse", "stringify"]
+  "keywords": [
+    "next",
+    "json",
+    "base64",
+    "b64",
+    "parse",
+    "stringify"
+  ]
 }
