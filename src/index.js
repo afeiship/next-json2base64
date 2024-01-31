@@ -1,15 +1,15 @@
 import nx from '@jswork/next';
-import base64 from 'js-base64';
+import { Base64 } from 'js-base64';
 
 const NxJson2base64 = nx.declare('nx.Json2base64', {
   statics: {
-    base64,
+    base64: Base64,
     encode: function (inObject) {
       var str = JSON.stringify(inObject);
-      return base64.encode(str);
+      return Base64.encode(str);
     },
     decode: function (inString) {
-      var jsonStr = base64.decode(inString);
+      var jsonStr = Base64.decode(inString);
       return JSON.parse(jsonStr);
     },
     encodeURI: function (inObject) {
