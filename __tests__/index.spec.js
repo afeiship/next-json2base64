@@ -1,4 +1,4 @@
-const NxJson2base64 = require('../src');
+import NxJson2base64 from '../src';
 
 describe('NxJson2base64 basic api test', function () {
   test('test stringify:', function () {

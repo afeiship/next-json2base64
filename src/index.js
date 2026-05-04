@@ -23,8 +23,8 @@ const NxJson2base64 = nx.declare('nx.Json2base64', {
   }
 });
 
-if (typeof module !== 'undefined' && module.exports && typeof wx === 'undefined') {
-  module.exports = NxJson2base64;
-}
+// if (typeof module !== 'undefined' && module.exports && typeof wx === 'undefined') {
+//   module.exports = NxJson2base64;
+// }
 
 export default NxJson2base64;

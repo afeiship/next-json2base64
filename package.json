@@ -1,6 +1,6 @@
 {
   "name": "@jswork/next-json2base64",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "Json and base64 encode/decode.",
   "homepage": "https://js.work",
   "author": {
